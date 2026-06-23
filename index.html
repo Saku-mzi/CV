@@ -10,24 +10,24 @@
     <h1>Changes</h1>
     <form action="thank-you.html">
       <p>
-        <label for="name">Names</label>
-        <input
-          type="text"
-          name="name"
-          id="name"
-          placeholder="eg. John Motsamai Doe"
-        />
+        <label for="name">Names:</label>
+        <input type="text" name="name" id="name" required />
       </p>
       <p>
-        <label for="email">Email</label>
-        <input
-          type="email"
-          name="email"
-          id="email"
-          placeholder="eg. motsamaidoe@gmail.com"
-        />
+        <label for="email">Email:</label>
+        <input type="email" name="email" id="email" required />
       </p>
-      <p><button type="submit">Log In</button></p>
+      <p>
+        <label for="password">Password:</label>
+        <input type="password" name="password" id="password" required />
+      </p>
+      <p>
+        <label for="tos">
+          <input type="checkbox" name="tos" id="tos" />
+          Do you agree with the terms of service?
+        </label>
+      </p>
+      <button type="submit">Log In</button>
     </form>
   </body>
 </html>
