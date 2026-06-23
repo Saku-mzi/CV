@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Changes</title>
     <link rel="stylesheet" href="main.css" />
   </head>
   <body>
@@ -11,15 +11,33 @@
     <form action="thank-you.html">
       <p>
         <label for="name">Names:</label>
-        <input type="text" name="name" id="name" required />
+        <input
+          type="text"
+          name="name"
+          id="name"
+          placeholder="John Motsamai Doe"
+          required
+        />
       </p>
       <p>
         <label for="email">Email:</label>
-        <input type="email" name="email" id="email" required />
+        <input
+          type="email"
+          name="email"
+          id="email"
+          placeholder="motsamaidoe@gmail.com"
+          required
+        />
       </p>
       <p>
         <label for="password">Password:</label>
-        <input type="password" name="password" id="password" required />
+        <input
+          type="password"
+          name="password"
+          id="password"
+          minlength="8"
+          required
+        />
       </p>
       <p>
         <label for="tos">
@@ -27,7 +45,40 @@
           Do you agree with the terms of service?
         </label>
       </p>
-      <button type="submit">Log In</button>
+      <p>
+        <label
+          ><input
+            type="radio"
+            name="dish"
+            value="chicken"
+            checked
+          />chicken</label
+        >
+        <label><input type="radio" name="dish" value="beef" />beef</label>
+        <label><input type="radio" name="dish" value="fish" />fish</label>
+      </p>
+
+      <textarea
+        name="bio"
+        id="bio"
+        rows="7"
+        placeholder="wie is jy?"
+      ></textarea>
+
+      <p>
+        <label for="province">Best province?</label>
+        <select name="province" id="province">
+          <option value="gp" default>Gauteng</option>
+          <option value="lp">Limpopo</option>
+          <option value="fs">Free State</option>
+          <option value="kzn">Kwa-Zulu Natal</option>
+          <option value="nw">North West</option>
+          <option value="nc">Northern Cape</option>
+          <option value="ec">Eastern Cape</option>
+          <option value="wc">Western Cape</option>
+        </select>
+      </p>
+      <p><button type="submit">Log In</button></p>
     </form>
   </body>
 </html>
