@@ -1,9 +1,32 @@
 body {
   background-color: rgb(246, 255, 248);
   font-family: monospace;
+  width: calc(200% / 3);
 }
 
 body form input {
   border-radius: 6px;
   border: solid 2px #b1b1b1;
+}
+
+main {
+  margin: auto;
+  justify-content: center;
+  text-align: center;
+}
+form {
+  margin-top: 5rem;
+}
+
+button {
+  box-shadow: 2px 2px black;
+  cursor: pointer;
+}
+
+div {
+  margin-top: 5rem;
+}
+
+ul {
+  list-style: none;
 }

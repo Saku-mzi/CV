@@ -7,78 +7,87 @@
     <link rel="stylesheet" href="main.css" />
   </head>
   <body>
-    <h1>Changes</h1>
-    <form action="thank-you.html">
-      <p>
-        <label for="name">Names:</label>
-        <input
-          type="text"
-          name="name"
-          id="name"
-          placeholder="John Motsamai Doe"
-          required
-        />
-      </p>
-      <p>
-        <label for="email">Email:</label>
-        <input
-          type="email"
-          name="email"
-          id="email"
-          placeholder="motsamaidoe@gmail.com"
-          required
-        />
-      </p>
-      <p>
-        <label for="password">Password:</label>
-        <input
-          type="password"
-          name="password"
-          id="password"
-          minlength="8"
-          required
-        />
-      </p>
-      <p>
-        <label for="tos">
-          <input type="checkbox" name="tos" id="tos" />
-          Do you agree with the terms of service?
-        </label>
-      </p>
-      <p>
-        <label
-          ><input
-            type="radio"
-            name="dish"
-            value="chicken"
-            checked
-          />chicken</label
-        >
-        <label><input type="radio" name="dish" value="beef" />beef</label>
-        <label><input type="radio" name="dish" value="fish" />fish</label>
-      </p>
-
-      <textarea
-        name="bio"
-        id="bio"
-        rows="7"
-        placeholder="wie is jy?"
-      ></textarea>
-
-      <p>
-        <label for="province">Best province?</label>
-        <select name="province" id="province">
-          <option value="gp" default>Gauteng</option>
-          <option value="lp">Limpopo</option>
-          <option value="fs">Free State</option>
-          <option value="kzn">Kwa-Zulu Natal</option>
-          <option value="nw">North West</option>
-          <option value="nc">Northern Cape</option>
-          <option value="ec">Eastern Cape</option>
-          <option value="wc">Western Cape</option>
-        </select>
-      </p>
-      <p><button type="submit">Log In</button></p>
-    </form>
+    <main>
+      <h1>changes</h1>
+      <form action="thank-you.html">
+        <p>
+          <label for="name">Names:</label>
+          <input
+            type="text"
+            name="name"
+            id="name"
+            placeholder="John Motsamai Doe"
+            required
+          />
+        </p>
+        <p>
+          <label for="email">Email:</label>
+          <input
+            type="email"
+            name="email"
+            id="email"
+            placeholder="motsamaidoe@gmail.com"
+            required
+          />
+        </p>
+        <p>
+          <label for="password">Password:</label>
+          <input
+            type="password"
+            name="password"
+            id="password"
+            minlength="8"
+            required
+          />
+          <ul>
+            <li>at least one uppercase letter</li>
+            <li>at least one lowercase letter</li>
+            <li>atleast one number</li>
+            <li>at least one symbol</li>
+            <li>minimum 8 characters</li>
+          </ul>
+        </p>
+        <p>
+          <label
+            ><input
+              type="radio"
+              name="dish"
+              value="chicken"
+              checked
+            />chicken</label
+          >
+          <label><input type="radio" name="dish" value="beef" />beef</label>
+          <label><input type="radio" name="dish" value="fish" />fish</label>
+        </p>
+        <textarea
+          name="bio"
+          id="bio"
+          rows="7"
+          placeholder="wie is jy?"
+        ></textarea>
+        <p>
+          <label for="province">Best province?</label>
+          <select name="province" id="province">
+            <option value="gp" default>Gauteng</option>
+            <option value="lp">Limpopo</option>
+            <option value="fs">Free State</option>
+            <option value="kzn">Kwa-Zulu Natal</option>
+            <option value="nw">North West</option>
+            <option value="nc">Northern Cape</option>
+            <option value="ec">Eastern Cape</option>
+            <option value="wc">Western Cape</option>
+          </select>
+        </p>
+        <div>
+          <p>
+            <label for="tos">
+              <input type="checkbox" name="tos" id="tos" />
+              Do you agree with the terms of service?
+            </label>
+          </p>
+          <p><button type="submit">Log In</button></p>
+        </div>
+      </form>
+    </main>
   </body>
 </html>
