@@ -1,0 +1,9 @@
+body {
+  background-color: rgb(246, 255, 248);
+  font-family: monospace;
+}
+
+body form input {
+  border-radius: 6px;
+  border: solid 2px #b1b1b1;
+}
